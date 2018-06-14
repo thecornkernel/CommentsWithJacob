@@ -1,0 +1,20 @@
+<img src="https://image.ibb.co/eaheNy/Comments_Pic.png"/>
+<form action="/" method="POST" id="form1">
+<input name="name" id="namefield" type="text" value="" placeholder="Enter Name"/>
+<input name="comment" id="comment_section" type="text" value="" placeholder="Enter Your Comment" />
+<button name="submit" type="submit">Submit</button 
+
+</form>
+<table>
+
+  {%for comment in comments %}
+    <tr>
+      <td>
+        {{ comment.name }}
+      </td>
+      <td>
+        {{ comment.comment }}
+      </td>
+    </tr>
+  {% endfor %}
+</table>
